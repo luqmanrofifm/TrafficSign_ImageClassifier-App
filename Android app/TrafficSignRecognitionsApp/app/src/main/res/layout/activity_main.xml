@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layarkamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:src="@drawable/bg1"
+            android:id="@+id/img_penampil"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_above="@id/btn_kamera"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultrext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:layout_above="@id/btn_kamera"
+        android:layout_below="@id/layarkamera"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:fontFamily="sans-serif"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/btn_kamera"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btn_kamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Ambil Gambar"
+        android:textColor="#fff"
+        />
+
+</RelativeLayout>
